@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Suvidha AI</string>
+    <string name="accessibility_service_description">Suvidha AI analyzes gig platform notifications to help you understand order values and make informed decisions.</string>
+</resources>

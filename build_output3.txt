@@ -1,0 +1,76 @@
+﻿To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.5/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :gradle-plugin:pluginDescriptors
+> Task :gradle-plugin:processResources
+> Task :gradle-plugin:compileKotlin
+> Task :gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:classes
+> Task :gradle-plugin:jar
+> Task :gradle-plugin:inspectClassesForKotlinIC
+.\gradlew.bat : 
+At line:1 char:209
++ ... AI\android; 
+.\gradlew.bat clean 
+assembleDebug --no-daemon 
+2>&1 | Out- ...
++                 ~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (:  
+  String) [], RemoteExc   
+ eption
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+FAILURE: Build failed 
+with an exception.
+
+* Where:
+Build file 'D:\SUVIDHHAAI\
+android\build.gradle' 
+line: 21
+
+* What went wrong:
+An exception occurred 
+applying plugin request 
+[id: 'com.facebook.react.r
+ootproject']
+> Failed to apply plugin '
+com.facebook.react.rootpro
+ject'.
+   > A problem occurred 
+configuring project 
+':app'.
+      > A problem 
+occurred evaluating 
+project ':app'.
+         > Failed to 
+apply plugin 'com.android.
+internal.version-check'.
+            > Minimum 
+supported Gradle version 
+is 8.9. Current version 
+is 8.5. If using the 
+gradle wrapper, try 
+editing the 
+distributionUrl in D:\SUVI
+DHHAAI\android\gradle\wrap
+per\gradle-wrapper.propert
+ies to gradle-8.9-all.zip
+
+* Try:
+> Run with --stacktrace 
+option to get the stack 
+trace.
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to get 
+full insights.
+> Get more help at 
+https://help.gradle.org.
+
+BUILD FAILED in 2m 24s
+5 actionable tasks: 5 executed

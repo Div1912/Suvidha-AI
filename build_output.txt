@@ -1,0 +1,408 @@
+﻿
+Welcome to Gradle 8.5!
+
+Here are the highlights of this release:
+ - Support for running on Java 21
+ - Faster first use with Kotlin DSL
+ - Improved error and warning messages
+
+For more details see https://docs.gradle.org/8.5/release-notes.html
+
+Starting a Gradle Daemon, 2 incompatible and 1 stopped Daemons could not be reused, use --status for details
+.\gradlew.bat : The 
+message received from the 
+daemon indicates that the 
+daemon has disappeared.
+At line:1 char:209
++ ... DHHAAI\android; 
+.\gradlew.bat 
+assembleDebug 
+--stacktrace 2>&1 | Out-F 
+...
++                     ~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  he message rec...as d   
+ isappeared.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+Build request sent: Build{
+id=e09764f2-fe35-4406-8ec5
+-47687141043b, currentDir=
+D:\SUVIDHHAAI\android}
+Attempting to read last 
+messages from the daemon 
+log...
+Daemon pid: 53764
+  log file: C:\Users\rajdi
+\.gradle\daemon\8.5\daemon
+-53764.out.log
+----- Last  20 lines from 
+daemon log file - 
+daemon-53764.out.log -----
+2026-02-13T22:10:16.058+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Synchr
+onizedDispatchConnection] 
+thread 30: received class 
+org.gradle.launcher.daemon
+.protocol.Build
+2026-02-13T22:10:16.058+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Defaul
+tDaemonConnection] thread 
+30: Received non-IO 
+message from client: Build
+{id=e09764f2-fe35-4406-8ec
+5-47687141043b, currentDir
+=D:\SUVIDHHAAI\android}
+2026-02-13T22:10:16.058+05
+30 [INFO] [org.gradle.laun
+cher.daemon.server.Default
+IncomingConnectionHandler]
+ Received command: Build{i
+d=e09764f2-fe35-4406-8ec5-
+47687141043b, currentDir=D
+:\SUVIDHHAAI\android}.
+2026-02-13T22:10:16.059+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Defaul
+tIncomingConnectionHandler
+] Starting executing 
+command: Build{id=e09764f2
+-fe35-4406-8ec5-4768714104
+3b, currentDir=D:\SUVIDHHA
+AI\android} with 
+connection: socket 
+connection from 
+/127.0.0.1:52317 to 
+/127.0.0.1:52318.
+2026-02-13T22:10:16.060+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Daemon
+StateCoordinator] Command 
+execution: started DaemonC
+ommandExecution[command = 
+Build{id=e09764f2-fe35-440
+6-8ec5-47687141043b, curre
+ntDir=D:\SUVIDHHAAI\androi
+d}, connection = 
+DefaultDaemonConnection: 
+socket connection from 
+/127.0.0.1:52317 to 
+/127.0.0.1:52318] after 
+0.0 minutes of idle
+2026-02-13T22:10:16.061+05
+30 [INFO] [org.gradle.laun
+cher.daemon.server.DaemonR
+egistryUpdater] Marking 
+the daemon as busy, 
+address: [1c5523fc-dfd9-41
+61-b4c9-71b8449b4f3c 
+port:52317, addresses:[loc
+alhost/127.0.0.1]]
+2026-02-13T22:10:16.061+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.registry.Pers
+istentDaemonRegistry] 
+Marking busy by address: [
+1c5523fc-dfd9-4161-b4c9-71
+b8449b4f3c port:52317, add
+resses:[localhost/127.0.0.
+1]]
+2026-02-13T22:10:16.062+05
+30 [DEBUG] [org.gradle.cac
+he.internal.DefaultFileLoc
+kManager] Waiting to 
+acquire exclusive lock on 
+daemon addresses registry.
+2026-02-13T22:10:16.062+05
+30 [DEBUG] [org.gradle.cac
+he.internal.DefaultFileLoc
+kManager] Lock acquired 
+on daemon addresses 
+registry.
+2026-02-13T22:10:16.063+05
+30 [DEBUG] [org.gradle.cac
+he.internal.DefaultFileLoc
+kManager] Releasing lock 
+on daemon addresses 
+registry.
+2026-02-13T22:10:16.063+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Daemon
+StateCoordinator] 
+resetting idle timer
+2026-02-13T22:10:16.064+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Daemon
+StateCoordinator] daemon 
+is running. Sleeping 
+until state changes.
+2026-02-13T22:10:16.064+05
+30 [INFO] [org.gradle.laun
+cher.daemon.server.exec.St
+artBuildOrRespondWithBusy]
+ Daemon is about to start 
+building Build{id=e09764f2
+-fe35-4406-8ec5-4768714104
+3b, currentDir=D:\SUVIDHHA
+AI\android}. Dispatching 
+build started 
+information...
+2026-02-13T22:10:16.064+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.Synchr
+onizedDispatchConnection] 
+thread 32: dispatching org
+.gradle.launcher.daemon.pr
+otocol.BuildStarted@598514
+57
+2026-02-13T22:10:16.065+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.exec.E
+stablishBuildEnvironment] 
+Configuring env 
+variables: [USERDOMAIN_ROA
+MINGPROFILE, 
+PROCESSOR_LEVEL, 
+SESSIONNAME, 
+ALLUSERSPROFILE, 
+PROCESSOR_ARCHITECTURE, VS
+CODE_PYTHON_AUTOACTIVATE_G
+UARD, 
+VSCODE_GIT_IPC_HANDLE, 
+ANDROID_HOME, 
+PSModulePath, 
+SystemDrive, 
+VSCODE_INJECTION, 
+COLORTERM, DIRNAME, 
+USERNAME, 
+VSCODE_GIT_ASKPASS_NODE, 
+TERM_PROGRAM_VERSION, 
+ProgramFiles(x86), 
+GIT_ASKPASS, CHROME_CRASHP
+AD_PIPE_NAME, APP_HOME, 
+DEFAULT_JVM_OPTS, 
+PATHEXT, DriverData, 
+PAGER, ProgramData, 
+ProgramW6432, HOMEPATH, 
+PROCESSOR_IDENTIFIER, 
+ProgramFiles, PUBLIC, 
+windir, 
+ZES_ENABLE_SYSMAN, 
+IGCCSVC_DB, LOCALAPPDATA, 
+ChocolateyLastPathUpdate, 
+USERDOMAIN, LOGONSERVER, 
+JAVA_HOME, PROMPT, 
+EFC_13676_1592913036, 
+LANG, 
+VSCODE_GIT_ASKPASS_MAIN, 
+OneDrive, APPDATA, 
+JAVA_EXE, VSCODE_GIT_ASKPA
+SS_EXTRA_ARGS, 
+ChocolateyInstall, 
+CommonProgramFiles, Path, 
+ANTIGRAVITY_CLI_ALIAS, 
+OS, TERM_PROGRAM, VSCODE_J
+DWP_ADAPTER_ENDPOINTS, 
+COMPUTERNAME, 
+PROCESSOR_REVISION, 
+CLASSPATH, 
+CommonProgramW6432, 
+ComSpec, APP_BASE_NAME, 
+=D:, SystemRoot, TEMP, 
+HOMEDRIVE, USERPROFILE, 
+TMP, 
+CommonProgramFiles(x86), 
+NUMBER_OF_PROCESSORS, 
+ANTIGRAVITY_AGENT]
+2026-02-13T22:10:16.070+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.exec.L
+ogToClient] About to 
+start relaying all logs 
+to the client via the 
+connection.
+2026-02-13T22:10:16.070+05
+30 [INFO] [org.gradle.laun
+cher.daemon.server.exec.Lo
+gToClient] The client 
+will now receive all 
+logging from the daemon 
+(pid: 53764). The daemon 
+log file: C:\Users\rajdi\.
+gradle\daemon\8.5\daemon-5
+3764.out.log
+2026-02-13T22:10:16.073+05
+30 [INFO] [org.gradle.laun
+cher.daemon.server.exec.Lo
+gAndCheckHealth] Starting 
+build in new daemon 
+[memory: 2 GiB]
+2026-02-13T22:10:16.075+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.exec.E
+xecuteBuild] The daemon 
+has started executing the 
+build.
+2026-02-13T22:10:16.075+05
+30 [DEBUG] [org.gradle.lau
+ncher.daemon.server.exec.E
+xecuteBuild] Executing 
+build with daemon 
+context: DefaultDaemonCont
+ext[uid=14f8a45b-46e4-4c85
+-92ef-55641402a449,javaHom
+e=C:\Program Files\Java\jd
+k-17,daemonRegistryDir=C:\
+Users\rajdi\.gradle\daemon
+,pid=53764,idleTimeout=108
+00000,priority=NORMAL,appl
+yInstrumentationAgent=true
+,daemonOpts=-XX:MaxMetaspa
+ceSize=512m,--add-opens=ja
+va.base/java.util=ALL-UNNA
+MED,--add-opens=java.base/
+java.lang=ALL-UNNAMED,--ad
+d-opens=java.base/java.lan
+g.invoke=ALL-UNNAMED,--add
+-opens=java.prefs/java.uti
+l.prefs=ALL-UNNAMED,--add-
+opens=java.base/java.nio.c
+harset=ALL-UNNAMED,--add-o
+pens=java.base/java.net=AL
+L-UNNAMED,--add-opens=java
+.base/java.util.concurrent
+.atomic=ALL-UNNAMED,-Xmx20
+48m,-Dfile.encoding=window
+s-1252,-Duser.country=IN,-
+Duser.language=en,-Duser.v
+ariant]
+----- End of the daemon 
+log -----
+
+JVM crash log found: file:
+///D:/SUVIDHHAAI/android/h
+s_err_pid53764.log
+
+FAILURE: Build failed 
+with an exception.
+
+* What went wrong:
+Could not dispatch a 
+message to the daemon.
+
+* Try:
+> Run with --info or 
+--debug option to get 
+more log output.
+> Run with --scan to get 
+full insights.
+> Get more help at 
+https://help.gradle.org.
+
+* Exception is:
+org.gradle.launcher.daemon
+.client.DaemonConnectionEx
+ception: Could not 
+dispatch a message to the 
+daemon.
+	at org.gradle.launcher.da
+emon.client.DaemonClientCo
+nnection.dispatch(DaemonCl
+ientConnection.java:69)
+	at org.gradle.launcher.da
+emon.client.DaemonClientCo
+nnection.dispatch(DaemonCl
+ientConnection.java:35)
+	at org.gradle.launcher.da
+emon.client.DaemonClientIn
+putForwarder$ForwardTextSt
+reamToConnection.endOfStre
+am(DaemonClientInputForwar
+der.java:81)
+	at org.gradle.launcher.da
+emon.client.InputForwarder
+$1.run(InputForwarder.java
+:99)
+	at org.gradle.internal.co
+ncurrent.ExecutorPolicy$Ca
+tchAndRecordFailures.onExe
+cute(ExecutorPolicy.java:6
+4)
+	at org.gradle.internal.co
+ncurrent.AbstractManagedEx
+ecutor$1.run(AbstractManag
+edExecutor.java:47)
+	at java.base/java.util.co
+ncurrent.ThreadPoolExecuto
+r.runWorker(ThreadPoolExec
+utor.java:1136)
+	at java.base/java.util.co
+ncurrent.ThreadPoolExecuto
+r$Worker.run(ThreadPoolExe
+cutor.java:635)
+	at java.base/java.lang.Th
+read.run(Thread.java:842)
+Caused by: org.gradle.inte
+rnal.remote.internal.Messa
+geIOException: Could not 
+write '/127.0.0.1:52317'.
+	at org.gradle.internal.re
+mote.internal.inet.SocketC
+onnection.flush(SocketConn
+ection.java:140)
+	at org.gradle.launcher.da
+emon.client.DaemonClientCo
+nnection.dispatch(DaemonCl
+ientConnection.java:60)
+	... 8 more
+Caused by: 
+java.io.IOException: 
+Connection reset by peer
+	at java.base/sun.nio.ch.S
+ocketDispatcher.write0(Nat
+ive Method)
+	at java.base/sun.nio.ch.S
+ocketDispatcher.write(Sock
+etDispatcher.java:54)
+	at java.base/sun.nio.ch.I
+OUtil.writeFromNativeBuffe
+r(IOUtil.java:132)
+	at java.base/sun.nio.ch.I
+OUtil.write(IOUtil.java:76
+)
+	at java.base/sun.nio.ch.I
+OUtil.write(IOUtil.java:53
+)
+	at java.base/sun.nio.ch.S
+ocketChannelImpl.write(Soc
+ketChannelImpl.java:532)
+	at org.gradle.internal.re
+mote.internal.inet.SocketC
+onnection$SocketOutputStre
+am.writeWithNonBlockingRet
+ry(SocketConnection.java:2
+79)
+	at org.gradle.internal.re
+mote.internal.inet.SocketC
+onnection$SocketOutputStre
+am.writeBufferToChannel(So
+cketConnection.java:267)
+	at org.gradle.internal.re
+mote.internal.inet.SocketC
+onnection$SocketOutputStre
+am.flush(SocketConnection.
+java:261)
+	at org.gradle.internal.re
+mote.internal.inet.SocketC
+onnection.flush(SocketConn
+ection.java:138)
+	... 9 more
+
