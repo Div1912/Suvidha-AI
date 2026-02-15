@@ -2,6 +2,9 @@ node_modules/
 .idea/
 .vscode/
 android/.gradle
+android/gradle-all-temp/
+android/gradle-8.3/
+android/*.zip
 android/app/build
 android/build
 ios/Pods
@@ -19,3 +22,5 @@ ios/*.moved-aside
 ios/*.pbxuser
 ios/*.perspectivev3
 ios/*.xcworkspace/xcuserdata
+*.apk
+*.aar
